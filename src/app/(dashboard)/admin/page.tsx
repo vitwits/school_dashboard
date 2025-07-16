@@ -2,6 +2,7 @@ import React from "react";
 import UserCard from "@/components/UserCard";
 import CountChart from "@/components/CountChart";
 import AttendanceChart from "@/components/AttendanceChart";
+import FinanceChart from "@/components/FinanceChart";
 
 const AdminPage = () => {
   return (
@@ -23,11 +24,13 @@ const AdminPage = () => {
           </div>
           {/* ATTENDANTS  CHARTS */}
           <div className="w-full lg:w-2/3 h-[450px]">
-          <AttendanceChart />
+            <AttendanceChart />
           </div>
         </div>
         {/* BOTTOM CHARTS */}
-        <div></div>
+        <div className="w-full h-[500px]">
+          <FinanceChart />
+        </div>
       </div>
       {/* RIGHT */}
       <div className="w-full lg:w-1/3">RIGHT</div>
