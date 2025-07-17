@@ -4,7 +4,7 @@ import Image from "next/image";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import Link from "next/link";
-import { parentsData, role, subjectsData } from "@/lib/data";
+import { role, subjectsData } from "@/lib/data";
 
 type Subject = {
   id: number;
@@ -40,7 +40,7 @@ const SubjectList = () => {
         <div className="flex items-center gap-2">
           <Link href={`/list/subjects/${item.id}`}>
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
-              <Image src="/view.png" alt="" width={16} height={16} />
+              <Image src="/edit.png" alt="" width={16} height={16} />
             </button>
           </Link>
           {role === "admin" && (
