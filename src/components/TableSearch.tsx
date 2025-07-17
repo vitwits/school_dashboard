@@ -9,7 +9,7 @@ const TableSearch = () => {
         type="text"
         placeholder="Search..."
         className="w-[200px] p-2 bg-transparent outline-none"
-        data-sharkid="__0"
+        data-sharkid="__1"
       />
     </div>
   );
